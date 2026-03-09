@@ -22,7 +22,7 @@ namespace WhiteLagoon.Infastructure.Data
                      ImageUrl = "https://placehold.co/600x400",
                      Occupancy = 4,
                      Price = 200,
-                     Sqtf = 550
+                     Sqft = 550
 
                  },
                  new Villa
@@ -33,7 +33,7 @@ namespace WhiteLagoon.Infastructure.Data
                      ImageUrl = "https://placehold.co/600x401",
                      Occupancy = 4,
                      Price = 300,
-                     Sqtf = 350
+                     Sqft = 350
                  },
                  new Villa
                  {
@@ -43,7 +43,7 @@ namespace WhiteLagoon.Infastructure.Data
                      ImageUrl = "https://placehold.co/600x402",
                      Occupancy = 4,
                      Price = 400,
-                     Sqtf = 450
+                     Sqft = 450
                  });
         }
     }
