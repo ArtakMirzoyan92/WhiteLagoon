@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Dynamic;
 using WhiteLagoon.Domain.Entities;
 using WhiteLagoon.Infastructure.Data;
 
@@ -40,6 +41,17 @@ namespace WhiteLagoon.Web.Controllers
             }
 
             return View();
+        }
+
+        public IActionResult Update(int villaId)
+        {
+            var obj = _db.Villas.FirstOrDefault(x => x.Id == villaId);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
         }
     }
 }
